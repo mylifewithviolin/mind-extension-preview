@@ -1,5 +1,5 @@
 # mind-extension
-日本語プログラミング言語MindのVSCode拡張（非公式）／ VSCode extension for Japanese Programing Language Mind (unofficial)
+日本語プログラミング言語MindのVSCode拡張（非公式）／ VSCode extension for Japanese Programming Language Mind (unofficial)
 
 # 概要/About
 日本語プログラミング言語Mindの**非公式**VSCode拡張です。
