@@ -1,0 +1,44 @@
+{
+    "while loop": {
+      "prefix":["koko","ここ","〇"],
+      "body": [
+        "ここから","繰り返し"
+      ],
+      "description": "ループ構文"
+    },
+    "for loop": {
+        "prefix":["kaisu","回数","〇〇"],
+        "body": [
+          "${1:count}　回数指定して","繰り返し"
+        ],
+        "description": "回数指定ループ構文"
+    },
+    "if else": {
+        "prefix":["mosi","もし","◇"],
+        "body": [
+        "${1:condition}","ならば","つぎへ"
+        ],
+        "description": "分岐構文"
+    },
+    "if elseif else": {
+        "prefix":["mosisamo","もしさも","◇◇"],
+        "body": [
+            "${1:condition}","ならば","さもなければ","つぎへ"
+        ],
+        "description": "分岐構文"
+    },
+    "case": {
+        "prefix":["jirei","じれい","◇◇◇"],
+        "body": [
+        "${1:condition}で","事例をとる","例外なら","事例終わり"
+        ],
+        "description": "多分岐構文 事例"
+    },
+    "case by string ": {
+        "prefix":["mojirei","もじれい","◇◇◇も"],
+        "body": [
+        "${1:condition}で","文字列事例をとる","例外なら","事例終わり"
+        ],
+        "description": "多分岐構文 文字列事例"
+    }
+  }

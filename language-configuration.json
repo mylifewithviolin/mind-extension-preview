@@ -1,0 +1,36 @@
+{
+    "comments": {// コメントに関する設定
+      "lineComment": "※",
+      "blockComment": ["/*", "*/"]
+    },
+    "brackets": [//主に対応する括弧を認識し、ハイライトする
+      ["{", "}"],
+      ["[", "]"],
+      ["(", ")"],
+      ["「", "」"],
+      ["『", "』"]
+    ],
+    "autoClosingPairs": [//自動的に閉じる括弧や引用符を補完する
+        {"open": "{",  "close": "}"},
+        {"open": "[",  "close": "]"},
+        {"open": "(",  "close": ")"},
+        {"open": "「",  "close": "」"},
+        {"open": "『",  "close": "』"},
+        {"open": "'", "close": "'"}
+    ],
+    "autoIndentation": "keep",//自動インデント:現在のインデントレベルを維持する
+    "indentationRules": {
+        "increaseIndentPattern": "^.*とは[^。\"']*$",//現在の行のインデントパターンに基づいて、次の行のインデントを増やす。
+        "decreaseIndentPattern": "^\\s*。", //現在の行のインデントパターンに基づいて、次の行のインデントを減らす。
+        "indentNextLinePattern": "^.*とは[^。\"']*$", //現在の行が特定のパターンに一致する場合、新しい次の行が自動的にインデントされる
+        "unIndentedLinePattern": "^\\s*※.*$"//インデントされるべきではない行の正規表現パターン
+    },
+    "syntax": {
+      "comments": "comment",
+      "brackets": "brackets",
+      "autoClosingPairs": "autoClosingPairs",
+      "autoIndentation": "autoIndentation",
+      "indentationRules": "indentationRules"
+    }
+  }
+  

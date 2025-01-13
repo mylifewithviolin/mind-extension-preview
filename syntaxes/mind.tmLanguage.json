@@ -1,0 +1,66 @@
+  {
+    "name": "mind",
+    "scopeName": "source.mind",
+    "patterns": [
+      {
+        "include": "#keywords"
+      },
+      {
+        "include": "#comments"
+      },
+      {
+        "include": "#strings"
+      }
+    ],
+    "repository": {
+      "keywords": {
+        "patterns": [
+          {
+            "name": "keyword.control.mind",
+            "match": "\\b(ならば|つぎへ|つぎに|さもなければ|でなければ|もし|または|かつ|ここから|回数指定|繰り返す|繰り返し|終わり)\\b"
+          },
+          {
+            "name": "keyword.operator.mind",
+            "match": "(?<=\\w)(は|とは|を|から|と|に)\\b"
+          },
+          {
+            "name": "keyword.declaration.mind",
+            "match": "\\b(変数|文字列|文字列実体変数|数値|定数|文字列定数|文字列定数配列|型紙|等価)\\b"
+          }
+        ]
+      },
+      "comments": {
+        "patterns": [
+          {
+            "name": "comment.line.kome-mark.mind",
+            "match": "※.*$"
+          },
+          {
+            "name": "comment.line.double-slash.mind",
+            "match": "//.*$"
+          },
+          {
+            "name": "comment.block.function.mind",
+            "begin": "（(?=.*→)",
+            "end": "）"
+          }
+        ]
+      },
+      "strings": {
+        "patterns": [
+          {
+            "name": "string.kagi-kakko.mind",
+            "begin": "「",
+            "end": "」"
+          },
+          {
+            "name": "string.quoted.double.mind",
+            "begin": "\"",
+            "end": "\""
+          }
+        ]
+      }
+    },
+    "scope": "source.mind",
+    "fileTypes": ["src"]
+  }
