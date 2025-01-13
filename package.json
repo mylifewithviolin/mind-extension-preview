@@ -1,15 +1,20 @@
 {
-    "name": "mind-extension",
-    "displayName": "mindExtension",
-    "description": "mind8-VsCodeExtension",
+    "name": "mind-extension-preview",
+    "displayName": "MindVSCodeExtension",
+    "description": "日本語プログラミング言語MindのVSCode拡張（非公式）／ VSCode extension for Japanese Programing Language Mind (unofficial)",
     "version": "0.0.1",
     "engines": {
       "vscode": "^1.95.0",
       "node": ">=10.10.0"
     },
     "categories": [
-        "Other"
-      ],
+      "Programming Languages"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/mylifewithviolin/mind-extension-preview.git"
+    },
+ 
     "main": "./out/extension.js",
     "contributes": {
       "languages": [
