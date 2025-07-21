@@ -27,18 +27,32 @@
         ],
         "description": "分岐構文"
     },
+    "select": {
+        "prefix":["sentaku","せんたく","◇◇◇せ"],
+        "body": [
+        "${1:condition}で","選択する","\t","選択終わり"
+        ],
+        "description": "多分岐構文 選択"
+    },
     "case": {
         "prefix":["jirei","じれい","◇◇◇"],
         "body": [
-        "${1:condition}で","事例をとる","例外なら","事例終わり"
+        "${1:condition}で","事例をとる","\t","\t例外なら","事例終わり"
         ],
         "description": "多分岐構文 事例"
     },
     "case by string ": {
         "prefix":["mojirei","もじれい","◇◇◇も"],
         "body": [
-        "${1:condition}で","文字列事例をとる","例外なら","事例終わり"
+        "${1:condition}で","文字列事例をとる","\t","\t例外なら","事例終わり"
         ],
         "description": "多分岐構文 文字列事例"
+    },
+    "case by range ": {
+        "prefix":["hajirei","はじれい","◇◇◇は"],
+        "body": [
+        "${1:condition}で","範囲事例をとる","\t","\t範囲外なら","事例終わり"
+        ],
+        "description": "多分岐構文 範囲事例"
     }
   }

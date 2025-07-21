@@ -7,7 +7,12 @@
 現時点でのリリースは主に日本語プログラミング言語Mind9βレビュアーユーザー向けのプレビューバージョンです。
 シンタックスハイライトは誤動作する場合または対応していない構文があることをご了承ください。
 
+本機能は「日本語プログラミング言語Mind生誕40周年記念プロジェクト」の一部です。
+
+
 This is an **unofficial** VSCode extension for Japanese programming language `Mind`.
 This version supports syntax highlighting and code snippets for some syntax of the Japanese programming language Mind8/9β.
 The current release is a preview version mainly for Japanese programming language Mind9β reviewer users.
-Please note that syntax highlighting may not work properly or some syntax may not be supported
+Please note that syntax highlighting may not work properly or some syntax may not be supported.
+
+This feature is part of the "Japanese Programming Language Mind 40th Anniversary Project"

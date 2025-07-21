@@ -21,7 +21,11 @@
           },
           {
             "name": "keyword.control2.mind",
-            "match": "\\b(回数指定|繰返|繰り返|終|長|実行終|メイン)[\\u3040-\\u309F]*\\b"
+            "match": "\\b(回数指定|繰返|繰り返|終|長|実行終|選択|選択終|事例|文字列事例|範囲事例|事例終|例外|範囲外|無処理|打切|打ち切|コンパイル)[\\u3040-\\u309F]*\\b"
+          },
+          {
+            "name": "keyword.control3.mind",
+            "match": "\\b(メイン)"
           },
           {
             "name": "keyword.operator.mind",
@@ -40,8 +44,14 @@
             "match": "※.*$"
           },
           {
-            "name": "comment.line.double-slash.mind",
-            "match": "//.*$"
+            "name": "comment.line.kakko.mind",
+            "begin": "(?<=^|\\s)（",
+            "end": "）(?=[\\s。])"
+          },
+          {
+            "name": "comment.block.mind",
+            "begin": "コンパイル抑止。",
+            "end": "コンパイル抑止終[\\u3041-\\u3096]*。"
           },
           {
             "name": "comment.block.function.mind",
