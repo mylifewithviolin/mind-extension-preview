@@ -3,7 +3,7 @@
     "displayName": "MindVSCodeExtension",
     "description": "日本語プログラミング言語MindのVSCode拡張（非公式）／ VSCode extension for Japanese Programming Language Mind (unofficial)",
     "publisher": "mylifewithviolin", 
-    "version": "0.0.2",
+    "version": "0.0.3",
     "engines": {
       "vscode": "^1.95.0",
       "node": ">=10.10.0"
